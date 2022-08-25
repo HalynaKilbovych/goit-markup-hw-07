@@ -1,0 +1,27 @@
+.clients-list {
+    display: flex;
+    justify-content: center;
+    column-gap:var(--gap);
+  }
+  .clients-items { 
+    width: 170px;
+    height: 92px;
+  }
+  .cliens-link { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    border: 1px solid #AFB1B8;
+    fill: #AFB1B8;
+  
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .cliens-link:hover,
+  .cliens-link:focus { 
+    fill: var(--accent-colour);
+    border: 1px solid var(--accent-colour);
+  }

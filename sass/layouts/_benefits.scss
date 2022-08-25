@@ -1,0 +1,28 @@
+.benefits-list {
+    display: flex;
+    column-gap: var(--gap);
+  }
+  .benefits-items {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+  .benefits-card { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  
+    width: 270px;
+    height: 120px;
+    background-color: var(--secondary-backround-colour);
+    border-radius: 4px;
+  }
+  .benefits-subtitle {
+    margin-bottom: 10px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--primary-header-colour);
+  }
+  .benefits-text {
+    line-height: 1.71;
+  }
+  
