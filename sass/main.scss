@@ -1,18 +1,18 @@
 @import './base/reset';
 @import './base/global'; 
 
-@import './utils/vars';
+@import './utils/variables';
 @import './utils/hidden';
 
-@import './layouts/header';
-@import './layouts/hero';
-@import './layouts/benefits';
-@import './layouts/about';
-@import './layouts/team';
-@import './layouts/clients';
-@import './layouts/footer';
-@import './layouts/modal';
-@import './layouts/portfolio/portfolio-card';
-@import './layouts/portfolio/portfolio-filter';
+@import './components/header';
+@import './components/hero';
+@import './components/benefits';
+@import './components/about';
+@import './components/team';
+@import './components/clients';
+@import './components/footer';
+@import './components/modal';
+@import './components/portfolio/portfolio-card';
+@import './components/portfolio/portfolio-filter';
 
 

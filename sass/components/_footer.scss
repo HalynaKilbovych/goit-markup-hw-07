@@ -1,0 +1,77 @@
+.footer {
+    background-color: #2f303a;
+    padding: 60px 0;
+    &__container { 
+      @include flex($d, $ai:baseline, null, null);
+    }
+    &__wrapper-address { 
+      margin-right: 70px;
+      flex-grow: 1;
+    }
+    &__wrapper-social { 
+      margin-right: 93px;
+    }
+    &__wrapper-form { 
+      margin-left: auto;
+    }
+    &__address{
+      margin-top: 20px;
+    }
+    &__subtitle { 
+    margin-bottom: 20px;
+    @include fonts(700, $fs, $lh, $ls);
+    text-transform: uppercase;
+    color: var(--secondary-header-color); 
+    }
+    &__media-link { 
+      background-color: rgba(255, 255, 255, 0.1);
+      color: var(--secondary-header-color);
+    }
+  }
+
+.address { 
+  &__item:not(:last-child) { 
+    margin-bottom: 9px;
+  }
+  &__link { 
+    font-style: normal;
+    line-height: 1.71;
+    color: var(--secondary-header-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus,
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+      }
+  }
+  &__link--gray { 
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+}
+.form { 
+  @include flex($d, null, null, $cg:12px);
+  display: flex;
+  column-gap: 12px;
+  &__input { 
+    @include fonts(null, 16px, $lh, $ls);
+    width: 358px;
+    height: 50px;
+    padding: 15px 16px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    color: rgba(255, 255, 255, 0.6);
+  }
+  &__button{ 
+    @include flex($d, $ai, $jc, $cg:10px);
+    width: 200px;
+    margin: 0 auto;
+  }
+  &__icon { 
+    fill: currentColor;
+    }
+}
+  

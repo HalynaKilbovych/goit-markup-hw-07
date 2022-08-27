@@ -1,0 +1,30 @@
+.cards-list {
+  @include flex($d, null, null, $cg);
+    &__items {
+      flex-basis: calc((100% - 90px) / 4);
+    }
+    &__item { 
+      @include flex($d, $ai, $jc, null);
+      margin-bottom: 30px;
+    
+      width: 270px;
+      height: 120px;
+      background-color: var(--secondary-background-color);
+      border-radius: 4px;
+    }
+    &__subtitle {
+      margin-bottom: 10px;
+      line-height: 1.14;
+      text-transform: uppercase;
+      color: var(--primary-header-color);
+    }
+    &__text {
+      @include fonts(null, $fs, $lh, $ls);
+      color: #757575;
+    }
+  }
+
+
+
+
+  
