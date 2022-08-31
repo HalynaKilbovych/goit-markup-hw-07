@@ -3,7 +3,7 @@
 }
 
 .image-list {
-  @include flex($d, null, space-between, $cg);
+  @include flex(flex, null, space-between, 30px);
   &__content { 
     position: relative;
   }

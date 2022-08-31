@@ -2,7 +2,7 @@
     background-color: #2f303a;
     padding: 60px 0;
     &__container { 
-      @include flex($d, $ai:baseline, null, null);
+      @include flex(flex, baseline, null, null);
     }
     &__wrapper-address { 
       margin-right: 70px;
@@ -19,7 +19,7 @@
     }
     &__subtitle { 
     margin-bottom: 20px;
-    @include fonts(700, $fs, $lh, $ls);
+    @include fonts(700, 14px, 16px, 0.03em);
     text-transform: uppercase;
     color: var(--secondary-header-color); 
     }
@@ -51,11 +51,9 @@
 
 }
 .form { 
-  @include flex($d, null, null, $cg:12px);
-  display: flex;
-  column-gap: 12px;
+  @include flex(flex, null, null, 12px);
   &__input { 
-    @include fonts(null, 16px, $lh, $ls);
+    @include fonts(null, 16px, 20px, 0.03em);
     width: 358px;
     height: 50px;
     padding: 15px 16px;
@@ -66,7 +64,7 @@
     color: rgba(255, 255, 255, 0.6);
   }
   &__button{ 
-    @include flex($d, $ai, $jc, $cg:10px);
+    @include flex(flex, center, center, 10px);
     width: 200px;
     margin: 0 auto;
   }

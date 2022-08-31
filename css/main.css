@@ -73,21 +73,6 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.current {
-  color: var(--accent-color);
-}
-.current::after {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  bottom: -1px;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: var(--accent-color);
-}
-
 :root {
   --text-color: #333333;
   --primary-header-color: #212121;
@@ -130,7 +115,8 @@ img {
 .logo {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
-  line-height: 1.19;
+  line-height: 1.1923076923;
+  letter-spacing: 0.03em;
 }
 .logo__text {
   color: var(--accent-color);
@@ -154,13 +140,29 @@ img {
   position: relative;
   padding: 32px 2px;
   font-weight: 500;
-  line-height: 1.14;
+  font-size: 14px;
+  line-height: 1.1428571429;
   letter-spacing: 0.02em;
   color: var(--primary-header-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .navigation__link:hover, .navigation__link:focus {
   color: var(--accent-color);
+}
+
+.current {
+  color: var(--accent-color);
+}
+.current::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-color);
 }
 
 .header__contacts {
@@ -181,7 +183,8 @@ img {
   padding: 32px 2px;
   color: #757575;
   font-weight: 500;
-  line-height: 1.14;
+  font-size: 14px;
+  line-height: 1.1428571429;
   letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -207,9 +210,9 @@ img {
   max-width: 696px;
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.5;
-  text-align: center;
+  line-height: 1.3636363636;
   letter-spacing: 0.06em;
+  text-align: center;
   text-transform: uppercase;
   color: var(--secondary-header-color);
 }
@@ -222,8 +225,8 @@ img {
 
 .cards-list {
   display: flex;
-  -moz-column-gap: var(--gap);
-       column-gap: var(--gap);
+  -moz-column-gap: 30px;
+       column-gap: 30px;
 }
 .cards-list__items {
   flex-basis: calc((100% - 90px) / 4);
@@ -246,7 +249,7 @@ img {
 }
 .cards-list__text {
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.7142857143;
   letter-spacing: 0.03em;
   color: #757575;
 }
@@ -257,9 +260,9 @@ img {
 
 .image-list {
   display: flex;
-  -moz-column-gap: var(--gap);
-       column-gap: var(--gap);
   justify-content: space-between;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
 }
 .image-list__content {
   position: relative;
@@ -284,9 +287,9 @@ img {
 
 .team-list {
   display: flex;
-  -moz-column-gap: var(--gap);
-       column-gap: var(--gap);
   justify-content: space-between;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
 }
 .team-list__item {
   background-color: var(--primary-background-color);
@@ -300,13 +303,13 @@ img {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.18;
+  line-height: 1.1875;
   text-align: center;
   color: var(--primary-header-color);
 }
 .team-list__text {
   font-size: 16px;
-  line-height: 1.18;
+  line-height: 1.1875;
   text-align: center;
   margin-bottom: 16px;
 }
@@ -341,9 +344,9 @@ img {
 
 .logo-list {
   display: flex;
-  justify-content: center;
-  -moz-column-gap: var(--gap);
-       column-gap: var(--gap);
+  align-items: center;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
 }
 .logo-list__items {
   width: 170px;
@@ -388,9 +391,9 @@ img {
 }
 .footer__subtitle {
   margin-bottom: 20px;
-  font-size: 14px;
   font-weight: 700;
-  line-height: 1.14;
+  font-size: 14px;
+  line-height: 1.1428571429;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--secondary-header-color);
@@ -422,6 +425,9 @@ img {
        column-gap: 12px;
 }
 .form__input {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
   width: 358px;
   height: 50px;
   padding: 15px 16px;
@@ -429,15 +435,12 @@ img {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 .form__button {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   -moz-column-gap: 10px;
        column-gap: 10px;
   width: 200px;
@@ -484,8 +487,8 @@ img {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--primary-header-color);
 }
 .modal__button-close {
@@ -511,6 +514,9 @@ img {
 .button-close:hover .button-close__icon {
   fill: var(--accent-color);
 }
+.button-close:focus .button-close__icon {
+  fill: var(--accent-color);
+}
 
 .forms__field {
   margin-bottom: 10px;
@@ -520,19 +526,19 @@ img {
 }
 .forms__comment-area::-moz-placeholder {
   font-size: 12px;
-  line-height: 1.16;
+  line-height: 1.1666666667;
   letter-spacing: 0.01em;
   color: #757575;
 }
 .forms__comment-area:-ms-input-placeholder {
   font-size: 12px;
-  line-height: 1.16;
+  line-height: 1.1666666667;
   letter-spacing: 0.01em;
   color: #757575;
 }
 .forms__label, .forms__comment-area::placeholder {
   font-size: 12px;
-  line-height: 1.16;
+  line-height: 1.1666666667;
   letter-spacing: 0.01em;
   color: #757575;
 }
@@ -592,10 +598,11 @@ img {
   align-items: center;
   justify-content: center;
   font-size: 14px;
+  line-height: 1.7142857143;
   letter-spacing: 0.03em;
   color: #757575;
 }
-.forms__checkbox-label span {
+.forms__checkbox-label .checkbox-span {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -606,11 +613,11 @@ img {
   border-radius: 3px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.forms__checkbox-input:checked + .forms__checkbox-label span {
+.forms__checkbox-input:checked + .forms__checkbox-label .checkbox-span {
   border-color: transparent;
   background-color: var(--accent-color);
 }
-.forms__checkbox-input:focus + .forms__checkbox-label span {
+.forms__checkbox-input:focus + .forms__checkbox-label .checkbox-span {
   border-color: var(--accent-color);
 }
 .forms__check-link {
@@ -627,9 +634,9 @@ img {
 
 .card-list {
   display: flex;
+  justify-content: center;
   gap: var(--gap);
   flex-wrap: wrap;
-  justify-content: center;
 }
 .card-list__item {
   flex-basis: calc((100% - 60px) / 3);
@@ -651,7 +658,7 @@ img {
   left: 0;
   padding: 63px 24px;
   font-size: 18px;
-  line-height: 1.5;
+  line-height: 1.5555555556;
   letter-spacing: 0.03em;
   color: var(--secondary-header-color);
   overflow: auto;
@@ -679,7 +686,7 @@ img {
 }
 .card-list__description-subtitle {
   font-size: 16px;
-  line-height: 1.8;
+  line-height: 1.875;
   color: var(--text-color);
 }
 
@@ -696,7 +703,8 @@ img {
   border-radius: 4px;
   padding: 6px 22px;
   font-weight: 500;
-  line-height: 1.62;
+  font-size: 16px;
+  line-height: 1.625;
   text-align: center;
   color: var(--primary-header-color);
   background-color: var(--secondary-background-color);

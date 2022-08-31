@@ -1,5 +1,5 @@
 .card-list {
-  @include flex ($d, null, $jc, null);
+  @include flex (flex, null, center, null);
   gap: var(--gap);
   flex-wrap: wrap;
     &__item {
@@ -22,7 +22,7 @@
       top: 0;
       left: 0;
       padding: 63px 24px;
-      @include fonts(null, 18px, $lh, $ls);
+      @include fonts(null, 18px, 28px, 0.03em);
       color: var(--secondary-header-color);
     
       overflow: auto;
@@ -45,11 +45,11 @@
     &__description-title {
       margin-bottom: 4px;
       font-style: normal;
-      @include fonts(null, 18px, $lh, 0.06em);
+      @include fonts(null, 18px, 36px, 0.06em);
       color: var(--primary-header-color);
     }
     &__description-subtitle {
-      @include fonts(null, 16px, $lh, null);
+      @include fonts(null, 16px, 30px, null);
       color: var(--text-color);
     }
   }

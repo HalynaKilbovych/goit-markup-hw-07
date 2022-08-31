@@ -1,12 +1,12 @@
 .logo-list {
-  @include flex($d, $jc, null, $cg);
+  @include flex(flex, center, null, 30px);
 
     &__items { 
       width: 170px;
       height: 92px;
     }
     &__link { 
-      @include flex($d, $ai, $jc, null);
+      @include flex(flex, center, center, null);
       
       width: 100%;
       height: 100%;

@@ -1,10 +1,10 @@
 .cards-list {
-  @include flex($d, null, null, $cg);
+  @include flex(flex, null, null, 30px);
     &__items {
       flex-basis: calc((100% - 90px) / 4);
     }
     &__item { 
-      @include flex($d, $ai, $jc, null);
+      @include flex(flex, center, center, null);
       margin-bottom: 30px;
     
       width: 270px;
@@ -19,7 +19,7 @@
       color: var(--primary-header-color);
     }
     &__text {
-      @include fonts(null, $fs, $lh, $ls);
+      @include fonts(null, 14px, 24px, 0.03em);
       color: #757575;
     }
   }

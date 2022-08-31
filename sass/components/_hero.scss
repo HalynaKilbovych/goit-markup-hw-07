@@ -11,7 +11,7 @@
       margin: 0 auto;
       margin-bottom: 30px;
       max-width: 696px;
-      @include fonts(900, 44px, $lh, 0.06em);
+      @include fonts(900, 44px, 60px, 0.06em);
       text-align: center;
       text-transform: uppercase;
       color: var(--secondary-header-color);

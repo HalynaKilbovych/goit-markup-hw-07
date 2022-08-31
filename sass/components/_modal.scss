@@ -32,7 +32,7 @@
   &__title { 
     margin-bottom: 12px;
 
-    @include fonts(700, 20px, $lh, $ls);
+    @include fonts(700, 20px, 23px, 0.03em);
     text-align: center;
     color: var(--primary-header-color)
   }
@@ -44,7 +44,7 @@
 }
 
 .button-close { 
-  @include flex($d, $ai, $jc, null);
+  @include flex(flex, center, center, null);
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -58,6 +58,9 @@
   &:hover &__icon{ 
     fill: var(--accent-color);
   }
+  &:focus &__icon{ 
+    fill: var(--accent-color);
+  }
 }
 
 .forms { 
@@ -69,7 +72,7 @@
   }
   &__label, 
   &__comment-area::placeholder {
-    @include fonts(null, 12px, $lh, 00.01em);
+    @include fonts(null, 12px, 14px, 0.01em);
     color: #757575;
   }
   &__input-wrap {
@@ -116,16 +119,16 @@
         }
   }
   &__checkbox { 
-    @include flex ($d, null, $jc, null);
+    @include flex (flex, null, center, null);
     margin-bottom: 30px;
   }
   &__checkbox-label {
-    @include flex ($d, $ai, $jc, null);
-    @include fonts(null, $fs, $lh, $ls);
+    @include flex (flex, center, center, null);
+    @include fonts(null, 14px, 24px, 0.03em);
     color: #757575;
   }
-  &__checkbox-label span{
-    @include flex ($d, $ai, $jc, null);
+  &__checkbox-label .checkbox-span{
+    @include flex (flex, center, center, null);
     margin-right: 8px;
     width: 16px;
     height: 15px;

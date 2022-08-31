@@ -4,12 +4,9 @@
     justify-content: $jc;
     column-gap: $cg;
   }
-@mixin fonts ($fw:500, $fs:14px, $lh, $ls:0.03em) { 
+@mixin fonts($fw:500, $fs, $lh:24px, $ls:0.03em) { 
     font-weight: $fw;
     font-size: $fs;
     line-height: $lh/$fs;
-    letter-spacing: $ls
+    letter-spacing: $ls;
 }
-
-// @include flex ($d, $ai, $jc, null);
-// @include fonts(null, $fs, $lh, $ls);
